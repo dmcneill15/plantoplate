@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Fauna+One:wght@400&family=EB+Garamond:ital,wght@0,400;1,400&family=Montaga:wght@400&display=swap');
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.font-fauna-one {
+    font-family: 'Fauna One', serif;
+}
+
+.font-eb-garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.font-montaga {
+    font-family: 'Montaga', serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.content-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, hsla(45, 69%, 85%, 1) 0%, hsla(67, 39%, 59%, 1) 100%);
+   /* background-image: url("/background2.jpg");*/
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: center top;
+  opacity: 0.5; /* Adjust the opacity value as needed */
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.content-background {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  flex: 1; /* This ensures the main content takes up the remaining space */
+}
+
+.card-image-size {
+  width: 50%;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.slogan {
+  font-size: clamp(1.25rem, 3vw, 1.8rem);
+}
+
+.sub-head {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+.intro-paragraph {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.nav-link {
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  color: black;
+}
+
+.nav-link.active {
+  color: black !important;
+  font-weight: bolder;
+}
+
+.transparent-bg {
+  background: transparent;
+}
+
+.icon-button:hover {
+  background-color: #343a40; /* Dark background on hover */
+  color: white; /* Change text color to white */
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.icon-button:hover .custom-icon {
+  color: white; /* Change icon color to white on hover */
+}
+
+.footer-icon-size {
+  font-size: 25px !important;
+}
+
+.scroll-list-box{
+  background-color: rgba(255, 250, 236, 0.55);
+}
+
+
+/* Calendar Styles - Internal Calendar Tags */
+.fc {
+  color: black !important; /* Set all text in the calendar to black */
+}
+
+.fc-daygrid-event {
+  text-decoration: none !important; /* Remove underline from event text */
+  color: black !important; /* Ensure event text color is black */
+}
+
+.fc-daygrid-event a {
+  color: black !important; /* Set link color to black */
+  text-decoration: none !important; /* Ensure no underline for links */
+}
+
+/* Calendar Button Styles */
+.fc-button {
+  background-color: white !important; /* White background */
+  color: black !important; /* Black text */
+  border: none; /* No borders */
+}
+
+.fc-button:hover {
+  background-color: black !important; /* Darker green on hover */
+  color: white !important;
+}
+
+.fc-h-event {
+  background-color: white;
+  color: black;
+  /*border: 1px solid var(--fc-event-border-color);*/
+  border: 1px solid black;
+  display: block;
+}
+
+.fc-event-title {
+  color: black;
+}
+
+.fc-col-header-cell-cushion {
+  color: black;
+  text-decoration: none;
+}
+
+.fc-daygrid-day-number {
+  color: black;
+  text-decoration: none;
+}
+
+.fc-scrollgrid-sync-inner{
+    /*background-color: white;*/
+    background-color: rgba(255, 250, 236, 0.75);
+}
+
+.fc .fc-toolbar-title{
+  font-size: 2em;
+  font-family: 'Montaga', serif;
+}
+
+.fc .fc-list-day-cushion{
+  background-color: rgba(255, 250, 236, 0.75);
+  
+}
+
+.fc-list-day-text, .fc-list-day-side-text{
+  color: black;
+  text-decoration: none;
+}
+
+.fc-list-event{
+  background-color: rgba(255, 250, 236, 0.56);
+}
