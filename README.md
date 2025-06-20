@@ -9,7 +9,6 @@
 - 📅 **Drag-and-drop meal planner**
 - 🍽️ **Save and organize your favorite recipes**
 - 🔍 **Built-in meal inspiration when you're stuck**
-- 🔄 **Reusable weekly templates**
 - 📱 **Clean, responsive interface**
 
 ---
